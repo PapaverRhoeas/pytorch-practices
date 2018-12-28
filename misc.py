@@ -1,10 +1,6 @@
-import cv2
 import os
 import shutil
-import pickle as pkl
 import time
-import numpy as np
-import hashlib
 
 from IPython import embed
 
