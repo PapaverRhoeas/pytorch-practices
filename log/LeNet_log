@@ -1,0 +1,105 @@
+Visdom successfully connected to server
+PyTorch Version: 0.4.1
+Torchvision Version: 0.2.1
+CUDA available: False
+Model is running in cpu
+HyperParameters :
+-name=LeNet
+- batch_size=32
+- num_epochs=10
+- learning_rate=0.01
+- lr_scheduler=[5]
+
+Dataset MNIST
+    Number of datapoints: 60000
+    Split: train
+    Root Location: ./data
+    Transforms (if any): Compose(
+                             RandomRotation(degrees=(-15, 15), resample=False, expand=True)
+                             RandomCrop(size=(24, 24), padding=0)
+                             Pad(padding=4, fill=0, padding_mode=constant)
+                             Grayscale(num_output_channels=1)
+                             ToTensor()
+                             Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))
+                         )
+    Target Transforms (if any): None
+Dataset MNIST
+    Number of datapoints: 10000
+    Split: test
+    Root Location: /data
+    Transforms (if any): Compose(
+                             Pad(padding=2, fill=0, padding_mode=constant)
+                             ToTensor()
+                             Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))
+                         )
+    Target Transforms (if any): None
+LeNet(
+  (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(6, 16, kernel_size=(5, 5), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+  (pool2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=400, out_features=120, bias=True)
+  (fc2): Linear(in_features=120, out_features=84, bias=True)
+  (fc3): Linear(in_features=84, out_features=10, bias=True)
+)
+Epoch 1/10
+--------------------
+Current LR is 0.01000
+Train Loss: 0.6561 Acc: 0.7794
+Validate Loss: 0.0801 Acc: 0.9756
+Complete in 0m 37s
+Epoch 2/10
+--------------------
+Current LR is 0.01000
+Train Loss: 0.1871 Acc: 0.9424
+Validate Loss: 0.0587 Acc: 0.9823
+Complete in 0m 40s
+Epoch 3/10
+--------------------
+Current LR is 0.01000
+Train Loss: 0.1452 Acc: 0.9549
+Validate Loss: 0.0653 Acc: 0.9790
+Complete in 0m 34s
+Epoch 4/10
+--------------------
+Current LR is 0.01000
+Train Loss: 0.1244 Acc: 0.9616
+Validate Loss: 0.0445 Acc: 0.9859
+Complete in 0m 34s
+Epoch 5/10
+--------------------
+Current LR is 0.01000
+Train Loss: 0.1157 Acc: 0.9649
+Validate Loss: 0.0345 Acc: 0.9884
+Complete in 0m 35s
+Epoch 6/10
+--------------------
+Current LR is 0.00100
+Train Loss: 0.0794 Acc: 0.9751
+Validate Loss: 0.0272 Acc: 0.9916
+Complete in 0m 37s
+Epoch 7/10
+--------------------
+Current LR is 0.00100
+Train Loss: 0.0728 Acc: 0.9769
+Validate Loss: 0.0255 Acc: 0.9923
+Complete in 0m 36s
+Epoch 8/10
+--------------------
+Current LR is 0.00100
+Train Loss: 0.0678 Acc: 0.9787
+Validate Loss: 0.0246 Acc: 0.9915
+Complete in 0m 35s
+Epoch 9/10
+--------------------
+Current LR is 0.00100
+Train Loss: 0.0665 Acc: 0.9794
+Validate Loss: 0.0244 Acc: 0.9923
+Complete in 0m 35s
+Epoch 10/10
+--------------------
+Current LR is 0.00100
+Train Loss: 0.0658 Acc: 0.9795
+Validate Loss: 0.0252 Acc: 0.9910
+Complete in 0m 34s
+All complete in 5m 56s
